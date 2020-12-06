@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+}
+
+html, body{
+font-size:10px;
+margin:0px;
+height:100%;
+
+}
+
+main{
+
+background-color:black;
+height:100%;
+}
+
+main, h2{
+color:white;
+}
+
+h2{
+margin-top:.25rem;
+margin-bottom:.25rem;}
+
+#playButtonGroupDiv{
+display: grid;
+width:100%;
+height:90%;
+margin: 4rem 0 0 0;
+justify-content:center;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 1fr 1fr 1fr .5fr .5fr .5fr 1fr;
+column-gap: 3.5rem;
+row-gap: 1rem;
+grid-template-areas: 
+    ". . . rock . . ." 
+    "spock . . . . . paper"                   
+    ". . player winner computer . ."
+    ". . . action . . ."
+    ". . score score score . ."
+    ". . . newgame . . ."
+    ". lizard . . . scissors .";
+
+}
+.playButtonDiv{
+text-align:center;
+}
+
+#playButtonDivRock{
+grid-area: rock;
+}
+
+#playButtonDivPaper{
+grid-area: paper;
+}
+
+#playButtonDivScissors{
+grid-area: scissors;
+}
+
+#playButtonDivLizard{
+grid-area: lizard;
+}
+
+#playButtonDivSpock{
+grid-area: spock;
+}
+
+#playButtonDivWinner{
+grid-area: winner;
+}
+
+#playButtonDivScore{
+grid-area: score;
+}
+
+#playButtonDivNewgame{
+grid-area: newgame;
+}
+
+#playButtonDivAction{
+grid-area: action;
+}
+
+#playButtonDivPlayer{
+grid-area: player;
+}
+
+#playButtonDivComputer{
+grid-area: computer;
+}
+
+.grid{
+width:100%;
+height:100%;
+background-size: 100% 100%;
+}
+
+.playButton:hover, #newgame:hover{
+border-width: 1rem;
+}
+
+.playButton:hover{
+scale:1.1;}
+
+#score{
+padding-top:2rem;
+}
+
+#ROCK, .playButtonRock{
+background-image:linear-gradient(rgba(226, 5, 5, 0.5), rgba(226, 5, 5, 0.5)), url("Dwayne-Johnson-Posing-Rock-Photos.jpg");
+}
+
+#PAPER, .playButtonPaper{
+background-image:linear-gradient(rgba(255,255,51,.6), rgba(255,255,51,.6)), url("ConstitutionHeaderCloseup_1200-675.jpg");
+}
+
+#SCISSORS, .playButtonScissors{
+background-image:linear-gradient(rgba(51,51,255,.6), rgba(51,51,255,.6)), url("27219474-funny-guy-with-garden-shears-on-white.jpg");
+}
+
+#LIZARD, .playButtonLizard{
+background-image:linear-gradient(rgba(142,236,166,.6), rgba(142,236,166,.6)), url("lizard.jpg");
+}
+
+#SPOCK, .playButtonSpock{
+background-image:linear-gradient(rgba(204,102,0,.6), rgba(204,102,0,.6)), url("spock.jpg");
+}
+
+.tie{
+background-image: url();
+}
+
+#newgame{
+height:75%
+}
+
+#title{
+text-align:center;
+font-size:1.5rem;
+}
+
+.playButtonSelectExpand{
+transform:scale(1.1);
+border-color:white;
+
+}
+
+
+
